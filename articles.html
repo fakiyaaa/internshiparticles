@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="stylearticle.css">
+</head>
+<body>
+  <header>
+    <div class="logo">InternshipArticles</div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="/index.html" >Home</a>
+        </li>
+        <li>
+          <a href="/articles.html" class="active" >Articles</a>
+        </li>
+        <li>
+          <a href="/Share.html">Share</a>
+        </li>
+        <li>
+          <a href="/contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="internship-grid">
+    <section id="tech" class="internship-section">
+      <h2>Tech Internships</h2>
+      <div class="card-grid">
+        <div class="card-item" data-keywords="software engineer ui ux">
+          <img src="images/5393447809958668315.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Fakiya</h2>
+          <p class="user-profession">Software Engineer</p>
+          <div class="topics">
+            <div class="topic">UI/UX</div>
+            <div class="topic">Teaching Experience</div>
+            <div class="topic">Sophomore</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="business" class="internship-section">
+      <h2>Business Internships</h2>
+      <div class="card-grid">
+        <div class="card-item" data-keywords="investment banking business analyst">
+          <img src="images/5393447809958668315.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Fakiya</h2>
+          <p class="user-profession">Investment Banking</p>
+          <div class="topics">
+            <div class="topic">Business</div>
+            <div class="topic">Analyst</div>
+            <div class="topic">Finance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="internship-section">
+      <h2>Social Internships</h2>
+      <div class="card-grid">
+        <div class="card-item" data-keywords="sustainability social science">
+          <img src="images/5393447809958668315.jpg" alt="User Image" class="user-image">
+          <h2 class="user-name">Fakiya</h2>
+          <p class="user-profession">Sustainability Research</p>
+          <div class="topics">
+            <div class="topic">Social Science</div>
+            <div class="topic">Sustainability</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
