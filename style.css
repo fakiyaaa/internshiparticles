@@ -24,7 +24,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background: #0e1438; /* Slightly lighter dark blue */
+  background-color: #0a0e27; /* Slightly lighter dark blue */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,157 +125,49 @@ header {
   }
 }
 
-/* Search Bar Styling */
-.search-container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px; /* Add space below header */
-  margin-bottom: 20px;
-}
-.search-input {
-  width: 60%;
-  max-width: 600px;
-  padding: 15px;
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background-color: #0e1438;
-  color: #e0e6ed;
-  outline: none;
-  font-size: 1rem;
-  transition: box-shadow 0.3s ease;
+
+/* Scroll container for horizontal scrolling */
+.scroll-container {
+ 
+  display: flex; /* Horizontal layout */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Snap to each section */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+  height: 100vh; /* Full viewport height for each section */
 }
 
-.search-input::placeholder {
-  color: #607191;
-}
 
-.search-input:focus {
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-}
 
-/* Swiper Container */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align cards at the top */
-  margin: 0 auto;
-  padding-bottom: 40px; /* Add spacing at bottom */
-}
-
-.slider-wrapper {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card-list {
-  display: flex;
-  flex-wrap: wrap; /* Wrap cards to avoid overlap */
-  justify-content: center; /* Center the cards */
-  gap: 20px; /* Add space between cards */
-}
-
-/* Card Styling */
-.card-item {
+/* Each card (section) */
+.card {
+  flex: 0 0 100%; /* Each card takes full width of the viewport */
+  scroll-snap-align: center; /* Center each section when scrolling */
   display: flex;
   flex-direction: column;
-  visibility: hidden; /* Hide the card without collapsing space */
-  height: auto;
-}
-
-/* When visible, make card content visible */
-.card-item[style*="display: block"] {
-  visibility: visible;
-}
-
-.card-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Hover Shadow */
-}
-
-.card-item .user-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 3px solid #fff;
-  object-fit: cover;
-}
-
-.card-item .user-name {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.card-item .user-profession {
-  font-size: 1.15rem;
-  color: #e3e3e3;
-  margin: 14px 0 40px;
-}
-
-/* Button Styling */
-.card-item .readmore-button {
-  padding: 10px 35px;
-  font-size: 1.25rem;
-  background-color: #004aad;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-.card-item .readmore-button:hover {
-  background-color: #00337d;
-}
-
-/* Topic Tags */
-.topics {
-  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin-top: 15px;
-  flex-wrap: wrap;
+  background-color: #0a0e27;
+  padding: 20px;
+  text-align: center;
 }
 
-.topic {
-  background-color: #2a355b;
-  color: #e0e6ed;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
+/* Thumbnail styling */
+.thumbnail img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-/* Pagination */
-.slider-wrapper .swiper-pagination-bullet {
-  background: #e0e6ed;
-  height: 15px;
-  width: 15px;
+/* Title styling */
+.title {
+  font-size: 24px;
+  color: #D18B49;
+  margin-bottom: 10px;
 }
 
-.slider-wrapper .swiper-slide-button {
-  color: #fff;
-  margin-top: -50px;
-  transition: color 0.3s;
+/* Description styling */
+.description {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
 }
-
-.slider-wrapper .swiper-slide-button:hover {
-  color: #4658ff;
-}
-
-/* Responsive Swiper */
-@media (max-width: 768px) {
-  .slider-wrapper {
-    margin: 0 10px 40px;
-  }
-}
-
