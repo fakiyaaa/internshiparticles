@@ -6,17 +6,17 @@ const recentCards = [
   {
     title: "Fakiya Imangaliyeva",
     description: "Software Engineering Intern",
-    image: "images/5393447809958668315.jpg"
+    image: "../images/5393447809958668315.jpg"
   }, 
   {
     title: "Arina Alibayeva",
     description: "Data Engineering Intern",
-    image: "images/arinaphoto.png"
+    image: "../images/arinaphoto.png"
   }, 
   {
     title: "Nazym Zhiyengaliyeva",
     description: "Machine Learning Intern",
-    image: "images/nazymphoto.png"
+    image: "../images/nazymphoto.png"
   }
 ];
 

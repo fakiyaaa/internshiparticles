@@ -7,35 +7,35 @@ const technologyCards = [
   {
     title: "Fakiya Imangaliyeva",
     description: "Data Engineering Intern",
-    image: "images/5393447809958668315.jpg"
+    image: "../images/5393447809958668315.jpg"
   }, 
   {
     title: "Arina Alibayeva",
     description: "Data Science Intern",
-    image: "images/arinaphoto.png"
+    image: "../images/arinaphoto.png"
   }, 
   {
     title: "Nazym Zhiyengaliyeva",
     description: "Machine Learning Intern",
-    image: "images/nazymphoto.png"
+    image: "../images/nazymphoto.png"
   },
 
   {
     title: "hey hey",
     description: "Data Science Intern",
-    image: "images/nazymphoto.png"
+    image: "../images/nazymphoto.png"
   },
 
   {
     title: "hey hey2",
     description: "Software Engineering Intern",
-    image: "images/nazymphoto.png"
+    image: "../images/nazymphoto.png"
   },
 
   {
     title: "hey hey",
     description: "Data Science Intern",
-    image: "images/arinaphoto.png"
+    image: "../images/arinaphoto.png"
   }
 ];
 

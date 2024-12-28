@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch the header.html file
-  fetch("/header.html")
+  fetch("header.html")
     .then((response) => response.text())
     .then((html) => {
       // Create a temporary element to hold the fetched HTML
