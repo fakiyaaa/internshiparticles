@@ -25,3 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     navBar.classList.toggle("active");
   });
 });
+
+
+$(document).ready( ()=> {
+
+  $("#technology").on("click", function () {
+    window.location.href = "articles page/technology/techologyarticles.html";
+  });
+
+});
