@@ -14,3 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading the header:", error);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navBar = document.querySelector(".nav-bar");
+
+  // Toggle the active class on click
+  hamburger.addEventListener("click", () => {
+    navBar.classList.toggle("active");
+  });
+});
