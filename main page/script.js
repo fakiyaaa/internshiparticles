@@ -30,7 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 $(document).ready( ()=> {
 
   $("#technology").on("click", function () {
-    window.location.href = "articles page/technology/techologyarticles.html";
+    window.location.href = "articles_page/technology/techologyarticles.html";
+  });
+
+  $("#business").on("click", function () {
+    window.location.href = "articles_page/business/businessarticles.html";
+  });
+
+  $("#research").on("click", function () {
+    window.location.href = "articles_page/research/researcharticles.html";
   });
 
 });
